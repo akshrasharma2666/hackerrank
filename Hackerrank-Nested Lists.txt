@@ -1,0 +1,24 @@
+if __name__ == '__main__':
+
+    n = []
+    s = []
+    for _ in range(int(input())):
+        name = input()
+        n.append(name)
+        
+        score = float(input())
+        s.append(score)            
+    a=max(s)
+    b=min(s)
+    for i in range(len(n)):
+        if s[i]<a and s[i]>b:
+            a=s[i]
+            d = n[i]
+    for j in range(len(n)):
+        if s[j]==a:
+            c=n[j]
+            
+            
+print(c)
+print(d)
+          
