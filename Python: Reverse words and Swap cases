@@ -1,0 +1,19 @@
+## Skills certification test problem-solution
+
+def reverse_words_order_and_swap_cases(sentence):
+    # Write your code here
+    words = sentence.split(' ')
+    reverse_string = ' '.join(reversed(words)) 
+    result = reverse_string.swapcase()
+    return result
+
+if __name__ == '__main__':
+    fptr = open(os.environ['OUTPUT_PATH'], 'w')
+
+    sentence = input()
+
+    result = reverse_words_order_and_swap_cases(sentence)
+
+    fptr.write(result + '\n')
+
+    fptr.close()
